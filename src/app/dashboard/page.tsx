@@ -21,11 +21,52 @@ const Dashboard = () => {
             className="bg-blue-100 hover:bg-blue-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-200 ease-in-out transform hover:scale-105"
             href="/dashboard/tasks"
           >
-            <div>
-              <h2>Tasks</h2>
-              <span>📋</span>
+            <div className="flex items-center justify-between">
+              <h2 className="text-xl font-semibold text-blue-800">Tasks</h2>
+              <span className="text-blue-500 text-2xl">📋</span>
             </div>
-            <p>View,Organise, and Manage your daily tasks </p>
+            <p className="text-gray-700 mt-2">
+              View,Organise, and Manage your daily tasks.
+            </p>
+          </Link>
+          {/* ANALYTICS CARD */}
+          <Link
+            className="bg-green-100 hover:bg-green-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-200 ease-in-out transform hover:scale-105"
+            href="/dashboard/analytics"
+          >
+            <div className="flex items-center justify-between">
+              <h2 className="text-xl font-semibold text-blue-800">Analytics</h2>
+              <span className="text-blue-500 text-2xl">📊</span>
+            </div>
+            <p className="text-gray-700 mt-2">
+              Gain insights into your performance and trends.
+            </p>
+          </Link>
+          {/* SETTINGS CARD */}
+          <Link
+            className="bg-purple-100 hover:bg-purple-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-200 ease-in-out transform hover:scale-105"
+            href="/dashboard/settings"
+          >
+            <div className="flex items-center justify-between">
+              <h2 className="text-xl font-semibold text-blue-800">Settings</h2>
+              <span className="text-blue-500 text-2xl">⚙️</span>
+            </div>
+            <p className="text-gray-700 mt-2">
+              Customize and tweak your dashboard settings.
+            </p>
+          </Link>
+          {/* USERS CARD */}
+          <Link
+            className="bg-yellow-100 hover:bg-yellow-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-200 ease-in-out transform hover:scale-105"
+            href="/dashboard/users"
+          >
+            <div className="flex items-center justify-between">
+              <h2 className="text-xl font-semibold text-blue-800">Users</h2>
+              <span className="text-blue-500 text-2xl">👥</span>
+            </div>
+            <p className="text-gray-700 mt-2">
+              View and manage your user base.
+            </p>
           </Link>
         </div>
       </div>
